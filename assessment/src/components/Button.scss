@@ -1,0 +1,87 @@
+:root {
+  --primary: rgba(255, 50, 0, 0.5);
+  --warning: rgba(155, 50, 0, 0.6);
+  --danger: rgba(255, 0, 150, 0.5);
+  --success: rgba(0, 0, 150, 0.5);
+  --white: #fdfdfd;
+  --dark: #181717;
+  --menu-speed: 0.75s;
+}
+
+.imgBtn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: var(--warning);
+}
+
+#container {
+  text-align: center;
+}
+
+.imgBtn:hover {
+  transform: translateY(-3px);
+  color: var(--success);
+}
+
+.imgBtn--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  // border: none;
+}
+
+.imgBtn--warning--solid {
+  background-color: var(--warning);
+  color: var(--white);
+  border: none;
+}
+
+.imgBtn--danger--solid {
+  background-color: var(--danger);
+  color: var(--white);
+  border: none;
+}
+
+.imgBtn--success--solid {
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+}
+
+.imgBtn--primary--outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.imgBtn--warning--outline {
+  background-color: transparent;
+  color: var(--warning);
+  border: 2px solid var(--warning);
+}
+
+.imgBtn--danger--outline {
+  background-color: transparent;
+  color: var(--danger);
+  border: 2px solid var(--danger);
+}
+
+.imgBtn--success--outline {
+  background-color: transparent;
+  color: var(--success);
+  border: 2px solid var(--success);
+}
+
+/* Button Sizes */
+
+.imgBtn--medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.imgBtn--large {
+  padding: 15px 30px;
+  font-size: 20px;
+}
